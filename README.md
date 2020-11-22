@@ -1,8 +1,6 @@
 # Commit Rebasing
 
-Occasionally, when working between GitHub and GitHub Enterprise Servers, you might notice that your commit history isn't crediting you with your own commits. Most likely, this happened because either you haven't set up your computer's global git env file, and commits are being made to the working tree without your author information, or 2) you're using two different emails between your Git and GitHub accounts.
-
-To make sure your profile is accurately reflecting your commit history, look at your repositories' commit histories. If you notice your commits are not linking to your GitHub profile, this will help you out.
+Occasionally, when working between GitHub and GitHub Enterprise Servers, you might notice that your commit history isn't crediting you with your own commits. Most likely, this happened because either you haven't set up your computer's global git env file, and commits are being made to the working tree with an email address like `misha@mishas-macbook-pro.local`, or you're using different email addresses between your Git and GitHub accounts.
 
 > Please note, as Adam DeHaven states: This action is destructive to your repository's history. If you're collaborating on a repository with others, it's considered bad practice to rewrite published history... Running this script will rewrite history for all repository collaborators. After completing these steps, any person with forks or clones must fetch the rewritten history and rebase any local changes into the rewritten history.
 
@@ -76,3 +74,14 @@ Let's break down what's happening:
 1. Next, we need to provide the `--new-name` flag, even if we're not changing the name on our commits. Just put your name in. 
 1. Finally, we give the destination name of our remote repository– most likely just your `origin`. This allows us to directly update our remote with our new commit history.
 
+Once you run this command, your terminal will prompt you twice to confirm 1) the origin's URL, and 2) you understand that you're affecting the git history.
+
+![script confirmation 1]()
+
+![script confirmation 2]()
+
+Finally, it will automatically run a push to your remote, automatically updating the rebased history.
+
+## Voila
+
+That's all! Your commits will now be reflected on your Contribution Graph. 
