@@ -37,3 +37,9 @@ Let's go back up a level to parent `temp` directory.
 ```sh
 cd ..
 ```
+
+## Finding The Required Information
+
+With our script ready to go, let's return to GitHub and find the repository that needs to be updated.
+
+
