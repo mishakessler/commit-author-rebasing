@@ -70,3 +70,9 @@ Now that we have the old email, we're able to run the full script; from inside t
 
 Let's break down what's happening:
 
+1. We're telling our terminal to access the script at the location provided in the first argument: `../change-git-author/changeauthor.sh`
+1. Next, we're giving the script the email that needs to be replaced, which we found by running `git log`. In my case, it's my General Assembly email, but for you, it may be something like `misha@mishas-macbook-pro.local`.
+1. Next, we provide the email we need to change the commit to reflect. This should be your personal GitHub email.
+1. Next, we need to provide the `--new-name` flag, even if we're not changing the name on our commits. Just put your name in. 
+1. Finally, we give the destination name of our remote repository– most likely just your `origin`. This allows us to directly update our remote with our new commit history.
+
