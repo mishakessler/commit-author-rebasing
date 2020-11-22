@@ -38,8 +38,35 @@ Let's go back up a level to parent `temp` directory.
 cd ..
 ```
 
-## Finding The Required Information
+## Determining Which Repos to Clone
 
 With our script ready to go, let's return to GitHub and find the repository that needs to be updated.
 
+Once in the repository, check out the commit history. If you see multiple commits that aren't linked, you'll want to update that repository.
+
+![commit history screen cap]()
+
+First, you'll want to clone the repository down into the same `temp` directory as the cloned script; `cd` into the repository.
+
+```sh
+git clone <repository link> && cd <cloned repository name>
+```
+
+## Finding The Authorship Information
+
+In order to use this script, we'll first have to know the author information on the old commits. If you're not sure, run a `git log` so you can browse the commits and see the commit author email.
+
+![commit log author info]()
+
+From this example, we can see that two of my commits are under two different emails. I need my commit author information to have my gmail address. Let's get to running that script.
+
+## Running Our Rebase Script
+
+Now that we have the old email, we're able to run the full script; from inside the git repository, run the following command, replacing all content inside a `< >` with your information:
+
+```sh
+../change-git-author/changeauthor.sh --old-email <misha.kessler@generalassemb.ly> --new-email <misha.kessler@gmail.com> --new-name "<Misha Kessler>" --remote <origin>
+```
+
+Let's break down what's happening:
 
