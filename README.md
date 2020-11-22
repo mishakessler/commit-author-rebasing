@@ -18,7 +18,7 @@ mkdir temp && cd temp
 
 ## Setting Up
 
-In the directory, run clone the [Change Git Author Script by Adam DeHaven](https://www.adamdehaven.com/blog/update-commit-history-author-information-for-git-repository/); `cd` into the cloned repository.
+In the directory, clone the [Change Git Author Script by Adam DeHaven](https://www.adamdehaven.com/blog/update-commit-history-author-information-for-git-repository/); `cd` into the cloned repository.
 
 ```sh
 git clone https://github.com/adamdehaven/change-git-author && cd change-git-author
