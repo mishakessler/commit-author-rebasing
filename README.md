@@ -12,12 +12,26 @@ I've managed to get it down to two terminal commands, so take a look below for a
 
 First, in your terminal, set up a temporary directory that will allow you to clone the necessary repositories; `cd` into the temporary directory.
 
-```shell
+```sh
 mkdir temp && cd temp
 ```
 
+## Setting Up
+
 In the directory, run clone the [Change Git Author Script by Adam DeHaven](https://www.adamdehaven.com/blog/update-commit-history-author-information-for-git-repository/); `cd` into the cloned repository.
 
-```shell
-git clone https://github.com/adamdehaven/change-git-author
+```sh
+git clone https://github.com/adamdehaven/change-git-author && cd change-git-author
+```
+
+Once inside the cloned directory, you need to grant the script file the necessary privileges.
+
+```sh
+chmod +x changeauthor.sh
+```
+
+Let's go back up a level to parent `temp` directory.
+
+```sh
+cd ..
 ```
