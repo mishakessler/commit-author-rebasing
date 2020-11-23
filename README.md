@@ -1,4 +1,4 @@
-# Commit Rebasing
+# Commit Authorship Rebasing
 
 Occasionally, you might notice that your commit history isn't crediting you with your own commits. 
 
