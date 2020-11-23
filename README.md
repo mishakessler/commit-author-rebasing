@@ -1,6 +1,8 @@
 # Commit Rebasing
 
-Occasionally, when working between GitHub and GitHub Enterprise Servers, you might notice that your commit history isn't crediting you with your own commits. Most likely, this happened because either you haven't set up your computer's global git env file, and commits are being made to the working tree with an email address like `misha@mishas-macbook-pro.local`, or you're using different email addresses between your Git and GitHub accounts.
+Occasionally, you might notice that your commit history isn't crediting you with your own commits. 
+
+Most likely, this happened because either you haven't set up your computer's global git env file– and commits are being made to the working tree with an email address like `misha@mishas-macbook-pro.local`– or you're using different email addresses between your GitHub and GitHub Enterprise accounts.
 
 > Please note, as Adam DeHaven states: This action is destructive to your repository's history. If you're collaborating on a repository with others, it's considered bad practice to rewrite published history... Running this script will rewrite history for all repository collaborators. After completing these steps, any person with forks or clones must fetch the rewritten history and rebase any local changes into the rewritten history.
 
