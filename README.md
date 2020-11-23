@@ -40,9 +40,13 @@ cd ..
 
 With our script ready to go, let's return to GitHub and find the repository that needs to be updated.
 
-Once in the repository, check out the commit history. If you see multiple commits that aren't linked, you'll want to update that repository.
+Once in the repository, check out the commit history by clicking on your `X commits` link in the file explorer.
 
-![commit history screen cap]()
+![commit link screen cap](./github%20commits.png)
+
+If you see multiple commits that aren't linked to your profile, you'll want to update that repository.
+
+![commit history screen cap](./github%20commit%20history.png)
 
 First, you'll want to clone the repository down into the same `temp` directory as the cloned script; `cd` into the repository.
 
@@ -54,7 +58,7 @@ git clone <repository link> && cd <cloned repository name>
 
 In order to use this script, we'll first have to know the author information on the old commits. If you're not sure, run a `git log` so you can browse the commits and see the commit author email.
 
-![commit log author info]()
+![commit log author info](./git%20log.png)
 
 From this example, we can see that two of my commits are under two different emails. I need my commit author information to have my gmail address. Let's get to running that script.
 
@@ -76,12 +80,14 @@ Let's break down what's happening:
 
 Once you run this command, your terminal will prompt you twice to confirm 1) the origin's URL, and 2) you understand that you're affecting the git history.
 
-![script confirmation 1]()
+![script confirmation 1](./confirmation%201.png)
 
-![script confirmation 2]()
+![script confirmation 2](./confirmation%202.png)
 
 Finally, it will automatically run a push to your remote, automatically updating the rebased history.
 
 ## Voila
 
 That's all! Your commits will now be reflected on your Contribution Graph. 
+
+![success](./success.png)
