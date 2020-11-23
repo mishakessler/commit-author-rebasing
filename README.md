@@ -84,6 +84,8 @@ Now that we have the old email, we're able to run the full script; from inside t
 ../change-git-author/changeauthor.sh --old-email <misha.kessler@generalassemb.ly> --new-email <misha.kessler@gmail.com> --new-name "<Misha Kessler>" --remote <origin>
 ```
 
+> Note: Do **not** include the `< >` in the commands.
+
 Let's break down what's happening:
 
 1. We're telling our terminal to access the script at the location provided in the first argument: `../change-git-author/changeauthor.sh`
