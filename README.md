@@ -10,6 +10,8 @@ If you are not the only person on your repository, you will need to alert your t
 
 With that out of the way, I've managed to get the bulk of the work down to two terminal commands, so take a look below for an easy solution!
 
+<br>
+
 ## Step 1: Confirming Repositories to Rebase
 
 If you suspect you'll need to rebase your repository, check out the commit history by clicking on your `X commits` link in the file explorer.
@@ -22,6 +24,8 @@ If you see multiple commits that aren't linked to your profile, you'll want to u
 
 > For example, this shows commits from `Misha Kessler`, versus commits from `mishakessler`. I want the latter, because this is my GitHub Username.
 
+<br>
+
 ## Step 2: Getting Started
 
 First, in your terminal, set up a temporary directory that will allow you to clone the necessary repositories; `cd` into the temporary directory.
@@ -29,6 +33,8 @@ First, in your terminal, set up a temporary directory that will allow you to clo
 ```sh
 mkdir temp && cd temp
 ```
+
+<br>
 
 ## Step 3: Setting Up Our Script
 
@@ -50,6 +56,8 @@ Let's go back up a level to parent `temp` directory.
 cd ..
 ```
 
+<br>
+
 ## Step 4: Cloning Our Repository
 
 With our script ready to go, you'll want to clone the relevant repository into the same `temp` directory as the cloned script; `cd` into that repository.
@@ -65,6 +73,8 @@ In order to use this script, we first have to know the _author information_ on t
 ![commit log author info](./git%20log.png)
 
 > In this example, we can see that two of my commits are under two different emails. I need my commit author information to have my Gmail address, because this is linked to my personal GitHub. With that in mind, let's get to running that script.
+
+<br>
 
 ## Step 5: Running Our Rebase Script
 
@@ -96,9 +106,13 @@ Once confirmed, it will automatically run a `git push` to your remote, automatic
 
 ![success](./success.png)
 
+<br>
+
 ## Voila
 
 That's all! Your commits will now be reflected on your Contribution Graph. 
+
+<br>
 
 <hr>
 
