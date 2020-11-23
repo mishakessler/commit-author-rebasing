@@ -118,7 +118,7 @@ That's all! Your commits will now be reflected on your Contribution Graph.
 
 ## Speeding Up The Process (For Rebasing Multiple Repos)
 
-If you hav multiple repositories that you want to rebase, remember to use your terminal shortcuts! Once you're done with one rebase, you should still be in that repository's folder. Let's use the same commands to `cd` to our parent directory, clone a _new_ repository, and `cd` into that repository.
+If you have multiple repositories that you want to rebase, remember to use your terminal shortcuts! Once you're done with one rebase, you should still be in that repository's folder. Let's use the same commands to `cd` to our parent directory, clone a _new_ repository, and `cd` into that repository.
 
 ```sh
 cd .. && git clone <next repository link> && cd <next cloned repository name>
